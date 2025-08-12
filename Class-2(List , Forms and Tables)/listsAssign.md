@@ -11,7 +11,7 @@ Create an ordered list with at least 6 steps for making tea.
 
 Use <ol> with numbers by default.
 
-2 . Part B – Custom Styling
+2. Part B – Custom Styling
 Favorite Movies (Unordered List with Different Bullet Styles)
 
 Create an unordered list of 5 favorite movies.
