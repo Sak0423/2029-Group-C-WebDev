@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Timing Function Playground</title>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f3f4f6;
+    font-family: Arial, sans-serif;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 500px;
+  }
+
+  .label {
+    width: 120px;
+    font-weight: bold;
+    color: #111827;
+  }
+
+  .box {
+    width: 60px;
+    height: 60px;
+    background: #3b82f6; /* blue */
+    border-radius: 8px;
+    transition: transform 2s;
+  }
+
+  /* Each row demonstrates a different timing function */
+  .linear       { transition-timing-function: linear; }
+  .ease         { transition-timing-function: ease; }
+  .ease-in      { transition-timing-function: ease-in; }
+  .ease-out     { transition-timing-function: ease-out; }
+  .ease-in-out  { transition-timing-function: ease-in-out; }
+  .custom       { transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); } /* bounce-like */
+
+  /* When body has .animate, move the boxes */
+  body.animate .box {
+    transform: translateX(350px);
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: #10b981; /* green */
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+  <div class="row"><span class="label">linear</span>      <div class="box linear"></div></div>
+  <div class="row"><span class="label">ease</span>        <div class="box ease"></div></div>
+  <div class="row"><span class="label">ease-in</span>     <div class="box ease-in"></div></div>
+  <div class="row"><span class="label">ease-out</span>    <div class="box ease-out"></div></div>
+  <div class="row"><span class="label">ease-in-out</span> <div class="box ease-in-out"></div></div>
+  <div class="row"><span class="label">cubic-bezier</span><div class="box custom"></div></div>
+
+  <button onclick="document.body.classList.toggle('animate')">
+    Toggle Animation
+  </button>
+
+<script>
+  // When button is clicked, add/remove .animate to trigger transition
+</script>
+</body>
+</html>
