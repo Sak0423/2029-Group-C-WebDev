@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{
+            display: grid;
+            background-color: #f3f3f6;
+            place-items: center;
+            min-height: 100vh;
+        }
+
+        .btn{
+            background-color: #2563eb;
+            width: 150px;
+            height: 80px;
+            color: white;
+            border-radius: 20%;
+
+        /* Transition */
+         transition:background-color 2s cubic-bezier(1,-0.79, 0, 1.02) ;
+        }
+
+        .btn:hover{
+        background-color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <button class="btn">Click Me</button>
+</body>
+</html>
