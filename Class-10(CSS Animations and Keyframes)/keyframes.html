@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            padding: 50px;
+        }
+
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation-name:box-animation ;
+            animation-duration:4s ;
+            animation-iteration-count:infinite ;
+
+        }
+
+        @keyframes box-animation{
+         0%{
+            background-color: red;
+         }
+
+         25%{
+            background-color: blue;
+            transform:scale(1.4);
+            transform: rotate(140deg);
+         }
+
+         50%{
+            background-color: coral;
+            transform: translate(200px , 200px);
+         }
+
+         75%{
+            background-color: magenta;
+            border-radius: 50%;
+         }
+
+
+         100%{
+            background-color: green;
+            transform: skew(20deg);
+         }
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="box">Animatee!!</div>
+    </div>
+    
+</body>
+</html>
