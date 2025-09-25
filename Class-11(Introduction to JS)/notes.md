@@ -8,6 +8,7 @@
 - Installing Node.js
 - How Node.js runs JS code
 - Variables in JavaScript
+- Conditional Statements
 - How Js is a Dynamically Typed Language
 - DataTypes in JS (Primitive and Refrenece)
 - Functions in JS
