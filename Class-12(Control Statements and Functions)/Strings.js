@@ -30,6 +30,30 @@ console.log(str2.concat(" " , str3))
 
 // join and split
 
+// join - Array -> String
+
+const words = ['I' , 'Love' , 'JS']
+
+const sentence = words.join(' ')
+
+console.log(sentence)
+
+
+// split - String -> Array
+
+const sentence2 = 'I #love to #Code'
+
+
+const arr = sentence2.split('@')
+console.log(arr)
+
+
+// replace , subString - Homework
+
+
+
+
+
 
 
 
