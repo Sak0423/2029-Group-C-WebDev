@@ -65,6 +65,16 @@ console.log(splicedElements)
 console.log(fruits)
 
 
+const messages = ['Hi' , 'Hello' , 'Hola' , 'Namaste!']
+
+const topMessages = messages.slice(0 , 2)
+
+console.log(topMessages)
+
+
+
+
+
 
 
 
