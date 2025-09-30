@@ -40,5 +40,39 @@ cars.unshift('Mercedes')
 console.log(cars)
 
 
+// splice and slice
+
+let arr1 = [1 ,2 ,3 ,4 ,5 ,6]
+
+const slicedArr = arr1.slice(1 ,5)
+
+console.log(slicedArr)
+console.log(arr1)
+
+// const fruits = ['cherry' , 'apple' , 'banana' ,'orange']
+
+// const slicedFruits = fruits.slice(1 ,3)
+// console.log(slicedFruits)
+
+
+// Splice
+
+const fruits = ['cherry' , 'apple' , 'banana' ,'orange', 'papaya']
+
+const splicedElements = fruits.splice(1 , 4 , 'Mango' , "Kiwi")
+console.log(splicedElements)
+
+console.log(fruits)
+
+
+
+
+
+
+
+
+
+
+
 
 
