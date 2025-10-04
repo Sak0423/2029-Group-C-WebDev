@@ -1,0 +1,15 @@
+var a = 20
+var b = 30 
+
+function add(num1 , num2){
+   var ans = num1+num2
+   return ans
+}
+
+// console.log(add)
+
+var sum1 = add(a , b)
+var sum2 = add(4 ,5)
+
+console.log(sum1)
+console.log(sum2)
