@@ -4,157 +4,105 @@
 =======
 >>>>>>> 8434573 (push)
 ---
-
 # 🏆 **Contest Question: Responsive Product Gallery (Flexbox + Grid + Media Queries)**
-
 ---
 
-## **Problem Description**
-
-You are tasked with creating a **responsive e-commerce product gallery** using **HTML and CSS** only.
-This problem is designed to test your understanding of **Flexbox**, **CSS Grid**, **Positioning**, and **Media Queries** — all combined in a single layout.
-
-Your webpage should display a header and a responsive grid of product cards that automatically adjust their layout based on the screen size.
-
----
-
-## **Problem Statement**
-
-Create a webpage named `index.html` and a linked stylesheet `style.css` with the following requirements:
-
-### 🧱 **1. Header (Flexbox Layout)**
-
-* The header should include:
-
-  * A **logo** aligned to the left.
-  * A **navigation bar** with 4 links aligned to the right (`Home`, `Shop`, `About`, `Contact`).
-* Use **Flexbox** to align these items properly.
-* Header background color: `#222`
-* Text color: `#fff`
-
----
-
-### 🛒 **2. Product Gallery (Grid Layout)**
-
-* Below the header, display **6 product cards** using **CSS Grid**.
-* Each card should have:
-
-  * A product image
-  * A product name
-  * A product price
-  * A **“Buy Now”** button
-* Use the following grid rules:
-
-  * **3 columns** on desktop (`≥ 1024px`)
-  * **2 columns** on tablet (`≥ 600px`)
-  * **1 column** on mobile (`< 600px`)
-
----
-
-### 🎯 **3. Positioning**
-
-* Each product card must have a **SALE badge** positioned at the top-left corner of the product image using **absolute positioning**.
-
----
-
-### 📱 **4. Responsiveness (Media Queries)**
-
-* Use **media queries** to:
-
-  * Adjust grid layout for different screen sizes.
-  * Stack the navigation vertically on smaller screens.
-  * Adjust font sizes and padding for smaller screens.
-
----
-
-### 🎨 **Design Guidelines**
-
-* Page background color: `#f5f5f5`
-* Product card background: white
-* Rounded corners and a soft box-shadow for cards.
-
----
-
-## **Code Stub**
-
-Provide the following starter code to students:
-
-### **index.html**
-
-```html
+## **Problem Description** You are tasked with creating a **responsive
+e-commerce product gallery** using **HTML and CSS** only. This problem is
+designed to test your understanding of **Flexbox**, **CSS Grid**,
+**Positioning**, and **Media Queries** — all combined in a single layout. Your
+webpage should display a header and a responsive grid of product cards that
+automatically adjust their layout based on the screen size. --- ## **Problem
+Statement** Create a webpage named `index.html` and a linked stylesheet
+`style.css` with the following requirements: ### 🧱 **1. Header (Flexbox
+Layout)** * The header should include: * A **logo** aligned to the left. * A
+**navigation bar** with 4 links aligned to the right (`Home`, `Shop`, `About`,
+`Contact`). * Use **Flexbox** to align these items properly. * Header background
+color: `#222` * Text color: `#fff` --- ### 🛒 **2. Product Gallery (Grid
+Layout)** * Below the header, display **6 product cards** using **CSS Grid**. *
+Each card should have: * A product image * A product name * A product price * A
+**“Buy Now”** button * Use the following grid rules: * **3 columns** on desktop
+(`≥ 1024px`) * **2 columns** on tablet (`≥ 600px`) * **1 column** on mobile (`<
+600px`) --- ### 🎯 **3. Positioning** * Each product card must have a **SALE
+badge** positioned at the top-left corner of the product image using **absolute
+positioning**. --- ### 📱 **4. Responsiveness (Media Queries)** * Use **media
+queries** to: * Adjust grid layout for different screen sizes. * Stack the
+navigation vertically on smaller screens. * Adjust font sizes and padding for
+smaller screens. --- ### 🎨 **Design Guidelines** * Page background color:
+`#f5f5f5` * Product card background: white * Rounded corners and a soft
+box-shadow for cards. --- ## **Code Stub** Provide the following starter code to
+students: ### **index.html** ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Product Gallery</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Product Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">ShopEase</div>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
 
-  <!-- Header Section -->
-  <header class="header">
-    <div class="logo">ShopEase</div>
-    <nav class="nav">
-      <!-- TODO: Add navigation links here -->
-    </nav>
-  </header>
-
-  <!-- Product Gallery Section -->
-  <main class="gallery">
-    <!-- TODO: Create 6 product cards here with structure:
-         <div class="card">
-           <span class="badge">SALE</span>
-           <img src="..." alt="Product Name" />
-           <h3>Product Name</h3>
-           <p>$Price</p>
-           <button>Buy Now</button>
-         </div>
-    -->
-  </main>
-
-</body>
+    <main class="gallery">
+      <div class="card">
+        <span class="badge">SALE</span>
+        <img src="https://via.placeholder.com/300x200" alt="Product 1" />
+        <h3>Product One</h3>
+        <p>$25.00</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="card">
+        <span class="badge">SALE</span>
+        <img src="https://via.placeholder.com/300x200" alt="Product 2" />
+        <h3>Product Two</h3>
+        <p>$30.00</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="card">
+        <span class="badge">SALE</span>
+        <img src="https://via.placeholder.com/300x200" alt="Product 3" />
+        <h3>Product Three</h3>
+        <p>$40.00</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="card">
+        <span class="badge">SALE</span>
+        <img src="https://via.placeholder.com/300x200" alt="Product 4" />
+        <h3>Product Four</h3>
+        <p>$45.00</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="card">
+        <span class="badge">SALE</span>
+        <img src="https://via.placeholder.com/300x200" alt="Product 5" />
+        <h3>Product Five</h3>
+        <p>$35.00</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="card">
+        <span class="badge">SALE</span>
+        <img src="https://via.placeholder.com/300x200" alt="Product 6" />
+        <h3>Product Six</h3>
+        <p>$50.00</p>
+        <button>Buy Now</button>
+      </div>
+    </main>
+  </body>
 </html>
-```
-
----
-
-### **style.css**
-
-```css
-/* TODO: Add global resets and font styles */
-
-/* TODO: Create header layout using Flexbox */
-
-/* TODO: Style navigation links */
-
-/* TODO: Create product grid using CSS Grid */
-
-/* TODO: Add absolute positioning for SALE badge */
-
-/* TODO: Add button styles */
-
-/* TODO: Add media queries for responsive design */
-```
-
----
-
-## **Expected Output Description**
-
-### 💻 On Desktop (≥ 1024px)
-
-* Header: Logo on left, navigation links on right (horizontal).
-* Product cards: 3 in a row.
-
-### 📱 On Tablet (≥ 600px)
-
-* Product cards: 2 in a row.
-
-### 📞 On Mobile (< 600px)
-
-* Navigation links stacked vertically.
-* Product cards: 1 per row.
-
----
-
-
+``` --- ### **style.css** ```css /* TODO: Add global resets and font styles */
+/* TODO: Create header layout using Flexbox */ /* TODO: Style navigation links
+*/ /* TODO: Create product grid using CSS Grid */ /* TODO: Add absolute
+positioning for SALE badge */ /* TODO: Add button styles */ /* TODO: Add media
+queries for responsive design */ ``` --- ## **Expected Output Description** ###
+💻 On Desktop (≥ 1024px) * Header: Logo on left, navigation links on right
+(horizontal). * Product cards: 3 in a row. ### 📱 On Tablet (≥ 600px) * Product
+cards: 2 in a row. ### 📞 On Mobile (< 600px) * Navigation links stacked
+vertically. * Product cards: 1 per row. ---
