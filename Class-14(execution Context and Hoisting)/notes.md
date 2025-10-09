@@ -1,5 +1,3 @@
-
-
 # Today's Content
 - Functions in JS
 - Functions as Expressions
