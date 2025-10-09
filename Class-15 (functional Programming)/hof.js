@@ -17,15 +17,18 @@ function circumference(radius){
   return 2*3.14*radius
 }
 
-function calcluate(radiusArr , cb){
-     let result = [];
+// function calcluate(radiusArr , cb){
+//      let result = [];
 
-  for (let i = 0; i < radiusArr.length; i++) {
-    result.push(cb(radiusArr[i]));
-  }
+//   for (let i = 0; i < radiusArr.length; i++) {
+//     result.push(cb(radiusArr[i]));
+//   }
 
-  return result;
-}
+//   return result;
+// }
+
+
+ // Homework
 
 const diameters = calcluate(myRadiusArray , diameter)
 const areas = calcluate(myRadiusArray , area)
