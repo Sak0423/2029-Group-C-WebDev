@@ -2,11 +2,15 @@
 
 // Callback Functions - Starting at 10:40
 
-function printFirstName(firstName, cb, cb2) {
-  cb("Gupta");
-  console.log(firstName);
+function printFirstName(firstName,cb, cb2) {
+    console.log(firstName);
+   
+    cb2(19);
   
-  cb2(19);
+    cb("Gupta");
+
+  
+ 
 }
 
 function printLastName(lastName) {
