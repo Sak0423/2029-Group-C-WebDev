@@ -36,6 +36,12 @@ console.log(squares);
 const transactions = [20 , 40 , 10 , 15 , 80 , -90 , -10]
 
 // convert these trancatios into INR with using map
+const inrAmounts = transactions.map(function(amount){
+    return amount*88
+})
+
+console.log(inrAmounts)
+console.log(transactions)
 
 
 
